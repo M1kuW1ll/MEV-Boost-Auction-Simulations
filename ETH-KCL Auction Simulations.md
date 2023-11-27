@@ -145,9 +145,9 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
    Moreover, we observe an increase when global delay becomes higher. In the scenarios where an adaptive player is winning the auction, a higher global delay situation gives the adaptive player more time to accumulate signals relative to when the highest bid is decided by the relay and place an extra small value over it to win. Despite possessing a higher aggregated signal, they still win by marginally exceeding the highest bid, thus making greater profits in scenarios with higher global delays. **The fundamental condition is the adaptive player is winning the auction.** 
 
-   Let's say X is submitted at 11.9s, the delay is 0.05s, so it is accepted as the current highest bid and made known to other builders by the relay at 11.95s. We assume only the adaptive player can out bid this X, placing a X+delta to win. Between 11.9s and 11.95s, adaptive players have 0.05s to accumulate signals.
+   Let's say a bid X is submitted at 11.9s, the delay is 0.02s, so it is accepted as the current highest bid and made known to other builders by the relay at 11.92s. We assume only the adaptive player can outbid this X, placing an X+delta to win. Between 11.9s and 11.92s, adaptive players have 0.02s to accumulate signals.
 
-   Same situation but when delay is 0.02s, adaptive will have to bid X+delta at 11.92s, with a smaller window to accumulate signals, potentially leading to a lower profit.
+   Same situation but when the delay is 0.05s, adaptive will have to bid X+delta at 11.95s, with a larger window to accumulate signals, potentially leading to a higher profit.
 
 
 
