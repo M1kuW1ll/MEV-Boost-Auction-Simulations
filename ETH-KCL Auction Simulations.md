@@ -6,7 +6,7 @@
 
 ## Simulation Setup
 
-**Strategy Profile:** 12 Naive Players
+**Strategy Profile:** 10 Naive Players
 
 **EOF Access Probablity:** 1 for all players
 
