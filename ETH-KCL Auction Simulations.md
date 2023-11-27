@@ -126,7 +126,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 **Profile 3 With Bluff Players**
 
-<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_bluff" alt="winrate_bluff" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_bluff.png" alt="winrate_bluff" style="zoom:50%;" />
 
 1. We see the performance of all the players is basically at the same level, because they are all naive-like players.
 2. Adaptive players become naive-like players and do not struggle with higher global delay.
@@ -135,7 +135,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 ### Impact of Global Delay on Profit per Win
 
-<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_bluff" alt="winrate_bluff" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/profitdist_all_global.png" alt="winrate_bluff" style="zoom:50%;" />
 
 1. Naive-like bidders, including naive players, last-minute/stealth/bluff players, and adaptive players who are affected by bluff players, have similar distributions of profit per win, which is very close to their profit margin. And their profit per win is not affected by global delay, because they always bid aggressively.
 
@@ -159,7 +159,7 @@ Average Profit and Aggregated Profit are basically the same, because average pro
 
 ### Impact of Individual Delay on Win Rate
 
-<img src="/Users/william/Documents/PhD/Typora Assets/indidelay_winrate-0828778.png" alt="indidelay_winrate" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/indidelay_winrate.png" alt="indidelay_winrate" style="zoom:25%;" />
 
 For all the strategies, players with lower individual delays have a higher win rate than players with higher individual delay. With a lower individual delay, they can submit their bids later, and they are more likely to include late-arriving signals in their blocks.
 
@@ -167,7 +167,7 @@ For all the strategies, players with lower individual delays have a higher win r
 
 ### Impact of Individual Delay on Profit per Win
 
-<img src="/Users/william/Documents/PhD/Typora Assets/profitdist_indidelay-0825283.png" alt="profitdist_indidelay" style="zoom: 25%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/profitdist_indidelay.png" alt="profitdist_indidelay" style="zoom: 25%;" />
 
 Similar to the impact of global delay on profit per win, as the effect of global delay and individual delay is the same in our model, for adatpive players, adaptive players with lower individual delays achieve a higher profit per win than those with higher individual delays. Lower individual delays allow these players to subit their bids later, and this gives them more time to accumulate signals, include more profitable MEV opportunities in the blocks, have a higher aggregated signal, but still place a small value over the highest bid to win with more profit. 
 
@@ -177,9 +177,9 @@ Both global and individual delay do not have an impact on naive-like players' pr
 
 ### Impact of Individual Delay on Average/Aggregated Profit
 
-<img src="/Users/william/Documents/PhD/Typora Assets/indidelay_averageprofit.png" alt="indidelay_averageprofit" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/indidelay_averageprofit.png" alt="indidelay_averageprofit" style="zoom: 33%;" />
 
-**Despite Individual delay has no effect on profit per win for naive-like players, they should still optimize their latency, e.g. considering colocation to the relay server, so that they can have a higher win rate. And a higher win rate will give them a higher average/aggregated profit. **
+**Despite Individual delay has no effect on profit per win for naive-like players, they should still optimize their latency, e.g. considering colocation to the relay server, so that they can have a higher win rate. And a higher win rate will give them a higher average/aggregated profit.**
 
 
 
@@ -197,11 +197,11 @@ The rest remains the same.
 
 ### Impact of Revealing Time of Last-minute and Stealth 
 
-<img src="/Users/william/Documents/PhD/Typora Assets/last_winrate.png" alt="last_winrate" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/last_winrate.png" alt="last_winrate" style="zoom:33%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/last_profit.png" alt="last_profit" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/last_profit.png" alt="last_profit" style="zoom:33%;" />
 
-**Bid Submission Time = 12 - $\epsilon$ - $\Delta$ - $\Delta_{last/stealth}$ ** **It means the revealing bid will be accepted by the relay at 12 - $\epsilon$**
+**Bid Submission Time = 12 - $\epsilon$ - $\Delta$ - $\Delta_{last/stealth}$** **It means the revealing bid will be accepted by the relay at 12 - $\epsilon$**
 
 $\epsilon < \Delta + \Delta_{adaptive}$ : Adaptive players cannot make an effective reaction based on the revealing action of last-minute/stealth, this makes last-minute/stealth very effective, even outperforming naive players, because adaptive players can still react to the update from normal naive players, but cannot react to the revealing from last-minute/stealth.
 
@@ -211,9 +211,9 @@ $\epsilon \geq \Delta + \Delta_{adaptive}$: Adaptive players have sufficient tim
 
 ### Impact of Revealing Time of Bluff
 
-<img src="/Users/william/Documents/PhD/Typora Assets/bluff_winrate-0850361.png" alt="bluff_winrate" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/bluff_winrate.png" alt="bluff_winrate" style="zoom:33%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/bluff_profit.png" alt="bluff_profit" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/bluff_profit.png" alt="bluff_profit" style="zoom:33%;" />
 
 $\epsilon < \Delta + \Delta_{adaptive}$ : Adaptive players cannot make an effective reaction on bluff players' bid cancelling, which means they will be bidding like naive agents for the entire effective bidding period. We see close performance between all three strategy groups.
 
@@ -225,7 +225,7 @@ We also investigate the impact of revealing time of bluff players on adaptive pl
 
 With the revealing time of bluff players becoming earlier, adaptive players can have more room to be adaptive, which contributes to an increased profit per win. However, it is still lower, compared to adaptive players in Profile 1&2 without bluff players, this shows the impact of bluff players on adaptive players.
 
-<img src="/Users/william/Documents/PhD/Typora Assets/epslion_adaptprofit.png" alt="epslion_adaptprofit" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/epslion_adaptprofit.png" alt="epslion_adaptprofit" style="zoom:33%;" />
 
 ### Impact of Auction Termination Time ($D$)
 
@@ -249,9 +249,9 @@ For bluff, failing to cancel before termination means bidding too high and winni
 
 #### Last-minute/Stealth
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_winrate_last_eps0-0955369.png" alt="std_winrate_last_eps0" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_winrate_last_eps0.png" alt="std_winrate_last_eps0" style="zoom:33%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_profit_last_eps0-0955358.png" alt="std_profit_last_eps0" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_profit_last_eps0.png" alt="std_profit_last_eps0" style="zoom:33%;" />
 
 
 
@@ -259,15 +259,15 @@ For bluff, failing to cancel before termination means bidding too high and winni
 
 #### Bluff
 
-<img src="/Users/william/Documents/PhD/Typora Assets/stdwinrate_bluff_eps0.png" alt="stdwinrate_bluff_eps0" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/stdwinrate_bluff_eps0.png" alt="stdwinrate_bluff_eps0" style="zoom:33%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_profit_bluff_eps0-0955112.png" alt="std_profit_bluff_eps0" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_profit_bluff_eps0.png" alt="std_profit_bluff_eps0" style="zoom:33%;" />
 
 **Because of the impact of bluff players, we see similar performance between adaptive and naive players. **
 
 **However, one interesting thing is that, especially from the win rate plot, we see when the std becomes greater, the performance gap between naive and adaptive becomes greater. This is because, with a greater std, the auction has a larger chance of being terminated at a relatively later time after 12, than with a smaller std.  For example, when the std is 0.2, the auction could terminate at a very late time like 12.5. But it rarely happens when std is 0.1**
 
-**In this case, when the auction terminates at a relatively later time after 12 and bluff players cancel at 12, it means that adaptive can have more time to be truly "adaptive", thus having a lower win rate performance than naive players. **
+**In this case, when the auction terminates at a relatively later time after 12 and bluff players cancel at 12, it means that adaptive can have more time to be truly "adaptive", thus having a lower win rate performance than naive players.**
 
 
 
@@ -279,17 +279,17 @@ For bluff, failing to cancel before termination means bidding too high and winni
 
 #### Last-minute/Stealth
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_winrate_last_eps02-0956142.png" alt="std_winrate_last_eps02" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_winrate_last_eps02.png" alt="std_winrate_last_eps02" style="zoom:33%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_profit_last_eps02.png" alt="std_profit_last_eps02" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_profit1_last_eps02.png" alt="std_profit_last_eps02" style="zoom:33%;" />
 
 
 
 #### Bluff
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_winrate_bluff_eps02.png" alt="std_winrate_bluff_eps02" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_winrate_bluff_eps02.png" alt="std_winrate_bluff_eps02" style="zoom:33%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/std_profit_bluff_eps02.png" alt="std_profit_bluff_eps02" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/std_profit_bluff_eps02.png" alt="std_profit_bluff_eps02" style="zoom:33%;" />
 
-**Different from $\epsilon = 0$, when $\epsilon = 0.2$, bluff players will cancel their bluff bids at 11.8, so in most cases, adaptive do have time to be truly "adaptive", we then see the difference in performance between naive and adaptive. **
+**Different from $\epsilon = 0$, when $\epsilon = 0.2$, bluff players will cancel their bluff bids at 11.8, so in most cases, adaptive do have time to be truly "adaptive", we then see the difference in performance between naive and adaptive.**
 
