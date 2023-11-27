@@ -155,7 +155,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 Average Profit and Aggregated Profit are basically the same, because average profit is calculated by aggregated profit divided by auction numbers.
 
-<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/averageprofit_globaldelays.png" alt="averageprofit_globaldelays" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/averageprofit_globaldelays.png" alt="averageprofit_globaldelays" style="zoom: 100%;" />
 
 **When the global delay becomes higher, even if adaptive players in Profile 1&2 has a higher profit per win without the influence of bluff players, they still struggle with win rate, contributing to a low average/aggregated profit.**
 
