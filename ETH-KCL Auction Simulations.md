@@ -30,7 +30,7 @@ $$
 \eta = winning.bid / total.signal
 $$
 
-<img src="/Users/william/Documents/PhD/Typora Assets/eff_delay.png" alt="eff_delay" style="zoom: 33%;" />
+<img src="https://github.com/M1kuW1ll/MEV-Boost-Auction-Simulations/tree/main/Fig/efficiency_globaldelay.png" alt="eff_delay" style="zoom: 33%;" />
 
 The median of efficiency typically starts from around 94%, because the average profit margin of 0.006 ETH is about 6% of the average total signal of 0.1 ETH.
 
