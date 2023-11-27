@@ -1,6 +1,6 @@
 # Agent-Based Modeling Simulation
 
-<img src="/Users/william/Documents/PhD/Typora Assets/acution_simulation.png" alt="acution_simulation" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/acution_simulation.png" alt="acution_simulation" style="zoom:50%;" />
 
 # Auction Design
 
@@ -8,11 +8,11 @@
 
 **Strategy Profile:** 12 Naive Players
 
-**EOF Access Probablity: ** 1 for all players
+**EOF Access Probablity:** 1 for all players
 
-**Individual Delay: **1 step (10ms) for all players
+**Individual Delay:** 1 step (10ms) for all players
 
-**Auction Interval: **D = 12, std = 0.
+**Auction Interval:** D = 12, std = 0.
 
 **Profit Margin:** random drawn from normal distribution mean=0.00659, std=0.0001, for all players
 
@@ -30,7 +30,7 @@ $$
 \eta = winning.bid / total.signal
 $$
 
-<img src="https://github.com/M1kuW1ll/MEV-Boost-Auction-Simulations/tree/main/Fig/efficiency_globaldelay.png" alt="eff_delay" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/efficiency_globaldelay.png" alt="eff_delay" style="zoom: 33%;" />
 
 The median of efficiency typically starts from around 94%, because the average profit margin of 0.006 ETH is about 6% of the average total signal of 0.1 ETH.
 
@@ -52,9 +52,9 @@ EOF: from 0.8 to 0.98 with 0.02 increment
 
 10,000 simulations
 
-<img src="/Users/william/Documents/PhD/Typora Assets/eof_proba_winrate.png" alt="eof_proba_winrate" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig//eof_proba_winrate.png" alt="eof_proba_winrate" style="zoom: 67%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/eof_proba_profit.png" alt="eof_proba_profit" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/eof_proba_profit.png" alt="eof_proba_profit" style="zoom:67%;" />
 
 **There is no need for investigating profit per win because they are all naive players. We observe the player with the highest EOF access wins 50% of the auctions. **
 
@@ -70,9 +70,9 @@ EOF Access: 80% for all the players
 
 Individual Delay: From 1 step to 10 steps, with 1 step increment
 
-<img src="/Users/william/Documents/PhD/Typora Assets/eof_delay_winrate-1084284.png" alt="eof_delay_winrate" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/eof_delay_winrate.png" alt="eof_delay_winrate" style="zoom:67%;" />
 
-<img src="/Users/william/Documents/PhD/Typora Assets/eof_delay_profit-1084292.png" alt="eof_delay_profit" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/eof_delay_profit.png" alt="eof_delay_profit" style="zoom:67%;" />
 
 
 
@@ -94,11 +94,11 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 
 
-**EOF Access Probablity: ** Randomly drawn from uniform distribution (0.8, 1) for all players across all three profiles
+**EOF Access Probablity:** Randomly drawn from uniform distribution (0.8, 1) for all players across all three profiles
 
-**Individual Delay: ** For each strategy group that contains 4 players in a profile, set 1 player with 1 step delay (10ms), 1 player with 2 step delay (20ms), 1 player with 3 step delay (30ms) and 1player with 4 step delay (40ms). This setting is same for all the strategy groups across all 3 strategy profiles.
+**Individual Delay:** For each strategy group that contains 4 players in a profile, set 1 player with 1 step delay (10ms), 1 player with 2 step delay (20ms), 1 player with 3 step delay (30ms) and 1player with 4 step delay (40ms). This setting is same for all the strategy groups across all 3 strategy profiles.
 
-**Auction Interval: **D = 12, std = 0.
+**Auction Interval:** D = 12, std = 0.
 
 **Profit Margin:** random drawn from normal distribution mean=0.00659, std=0.0001, for all players
 
@@ -114,19 +114,19 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 **Profile 1&2**
 
-<img src="/Users/william/Documents/PhD/Typora Assets/2.png" alt="2" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_last.png" alt="winrate_last" style="zoom:50%;" />
 
 1. Adaptive player struggle with win rate because of their reactive mechanism. They are already behind other naive-like players, and higher global delays make their reactions even slower.
 2. Last-minute/Stealth players do have a clear edge because the revealing time $\epsilon = 0$ , which makes adaptive players not able to make a reaction on their revealing action. If they reveal earlier, we will see similar performance between last-minute/stealth and naive players (refer to the plot below).
 3. The increasing of win rate in last-minute/stealth/naive is because adaptive players are losing more. Their bidding decision is not affected by delay, as naive players always update bids aggressively and last-minute/stealth player revealing actions take delay into account.
 
-<img src="/Users/william/Documents/PhD/Typora Assets/winrate_last_eps03.png" alt="winrate_last_eps03" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig//winrate_last_eps03.png" alt="winrate_last_eps03" style="zoom:50%;" />
 
 
 
 **Profile 3 With Bluff Players**
 
-<img src="/Users/william/Documents/PhD/Typora Assets/Figure_1-0763587.png" alt="Figure_1" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_bluff" alt="winrate_bluff" style="zoom:50%;" />
 
 1. We see the performance of all the players is basically at the same level, because they are all naive-like players.
 2. Adaptive players become naive-like players and do not struggle with higher global delay.
@@ -135,7 +135,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 ### Impact of Global Delay on Profit per Win
 
-![profitdist_all_global](/Users/william/Documents/PhD/Typora Assets/profitdist_all_global.png)
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_bluff" alt="winrate_bluff" style="zoom:50%;" />
 
 1. Naive-like bidders, including naive players, last-minute/stealth/bluff players, and adaptive players who are affected by bluff players, have similar distributions of profit per win, which is very close to their profit margin. And their profit per win is not affected by global delay, because they always bid aggressively.
 
@@ -153,7 +153,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 Average Profit and Aggregated Profit are basically the same, because average profit is calculated by aggregated profit divided by auction numbers.
 
-<img src="/Users/william/Documents/PhD/Typora Assets/averageprofit_globaldelays.png" alt="averageprofit_globaldelays" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/averageprofit_globaldelays.png" alt="averageprofit_globaldelays" style="zoom: 50%;" />
 
 **When the global delay becomes higher, even if adaptive players in Profile 1&2 has a higher profit per win without the influence of bluff players, they still struggle with win rate, contributing to a low average/aggregated profit.**
 
