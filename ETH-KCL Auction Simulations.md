@@ -119,7 +119,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_last.png" alt="winrate_last" style="zoom:50%;" />
 
 1. Adaptive player struggle with win rates because of their reactive mechanism. They are already behind other naive-like players, and higher global delays make their reactions even slower.
-2. Last-minute/Stealth players do have a clear edge because the revealing time $\epsilon = 0$ , which makes adaptive players not able to make a reaction on their revealing action. If they reveal earlier, we will see similar performance between last-minute/stealth and naive players (refer to the plot below).
+2. Last-minute/Stealth players do have a clear edge because the revealing time $\epsilon = 0$ , which makes adaptive players not able to make a reaction on their revealing action. If they reveal earlier, we will see similar performance between last-minute/stealth and naive players and a higher win rate for adaptive players (refer to the plot below).
 3. The increase of win rate in last-minute/stealth/naive is because adaptive players are losing more. Their bidding decision is not affected by delay, as naive players always update bids aggressively and last-minute/stealth player revealing actions take delay into account.
 
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig//winrate_last_eps03.png" alt="winrate_last_eps03" style="zoom:50%;" />
