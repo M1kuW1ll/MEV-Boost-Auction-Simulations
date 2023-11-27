@@ -165,7 +165,7 @@ Average Profit and Aggregated Profit are basically the same, because average pro
 
 For all the strategies, players with lower individual delays have a higher win rate than players with higher individual delay. With a lower individual delay, they can submit their bids later, and they are more likely to include late-arriving signals in their blocks.
 
-*Last-minute/Stealth have a higher win rate than other naive-like bidders because their revealing time $\epsilon$ = 0.
+*Last-minute/Stealth have a higher win rate than other naive-like bidders because their revealing time $\epsilon$ = 0 in Profile 1&2.
 
 ### Impact of Individual Delay on Profit per Win
 
