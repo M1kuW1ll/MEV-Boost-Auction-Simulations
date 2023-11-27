@@ -56,7 +56,7 @@ EOF: from 0.8 to 0.98 with 0.02 increment
 
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/eof_proba_profit.png" alt="eof_proba_profit" style="zoom:67%;" />
 
-**There is no need for investigating profit per win because they are all naive players. We observe the player with the highest EOF access wins 50% of the auctions. **
+**There is no need for investigating profit per win because they are all naive players. We observe the player with the highest EOF access wins 50% of the auctions.**
 
 
 
