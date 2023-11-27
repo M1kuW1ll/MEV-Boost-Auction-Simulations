@@ -267,9 +267,11 @@ For bluff, failing to cancel before termination means bidding too high and winni
 
 **Because of the impact of bluff players, we see similar performance between adaptive and naive players.**
 
-**However, one interesting thing is that, especially from the win rate plot, we see when the std becomes greater, the performance gap between naive and adaptive becomes greater. This is because, with a greater std, the auction has a larger chance of being terminated at a relatively later time after 12, than with a smaller std.  For example, when the std is 0.2, the auction could terminate at a very late time like 12.5. But it rarely happens when std is 0.1**
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/stdwinrate_bluff_eps0-zoomin.png" alt="std_profit_bluff_eps0" style="zoom:33%;" />
 
-**In this case, when the auction terminates at a relatively later time after 12 and bluff players cancel at 12, it means that adaptive can have more time to be truly "adaptive", thus having a lower win rate performance than naive players.**
+**However, one interesting thing is that, especially from the win rate plot, we see when the std becomes greater, the performance gap between naive and adaptive becomes greater. This is because, with a greater std, the auction has a larger chance of being terminated at a relatively later time after 12, than with a smaller std.  For example, when the std is 0.2, the auction could terminate at a very late time like 12.5. But it rarely happens when std is 0.1.**
+
+**In this case, when the auction terminates at a relatively later time after 12 and bluff players cancel at 12, it means that adaptive can have more time to be truly "adaptive", thus having a lower win rate performance than naive players. Therefore, the greater the std is, the greater the performance difference between adaptive players (under bluff) and naive players is.**
 
 
 
