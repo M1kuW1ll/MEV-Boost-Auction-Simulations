@@ -171,9 +171,9 @@ For all the strategies, players with lower individual delays have a higher win r
 
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/profitdist_indidelay.png" alt="profitdist_indidelay" style="zoom: 25%;" />
 
-Similar to the impact of global delay on profit per win, as the effect of global delay and individual delay is the same in our model, for adatpive players, adaptive players with lower individual delays achieve a higher profit per win than those with higher individual delays. Lower individual delays allow these players to subit their bids later, and this gives them more time to accumulate signals, include more profitable MEV opportunities in the blocks, have a higher aggregated signal, but still place a small value over the highest bid to win with more profit. 
+Similar to the impact of global delay on profit per win, as the effect of global delay and individual delay is the same in our model, for adatpive players, adaptive players with lower individual delays achieve a higher profit per win than those with higher individual delays. Lower individual delays allow these players to submit their bids later, and this gives them more time to accumulate signals, include more profitable MEV opportunities in the blocks, have a higher aggregated signal, but still place a small value over the highest bid to win with more profit. 
 
-Both global and individual delay do not have an impact on naive-like players' profit per win. Even if they have more time to accumulate signals, possess a higher aggregated signal, they still bid aggressively with their true valuation, and their profit per win is close to profit margin.
+Both global and individual delays do not have an impact on naive-like players' profit per win. Even if they have more time to accumulate signals, possess a higher aggregated signal, they still bid aggressively with their true valuation, and their profit per win is close to profit margin.
 
 
 
