@@ -34,7 +34,7 @@ $$
 
 The median of efficiency typically starts from around 94%, because the average profit margin of 0.006 ETH is about 6% of the average total signal of 0.1 ETH.
 
-When a new MEV opportunity are available near the end of the auction, e.g. a searcher sends another order flow, the builder include it in the new block and submit it with an updated bid. However, under higher delay situations, the auction might be terminated before the bid is accepted by the relay. The winner might fail to include some late-arriving transactions or order flows in his block, even if he wins the auction, contributing to a low efficiency.
+When a new MEV opportunity is available near the end of the auction, e.g. a searcher sends another order flow, the builder includes it in the new block and submits it with an updated bid. However, under higher delay situations, the auction might be terminated before the bid is accepted by the relay. The winner might fail to include some late-arriving transactions or order flows in his block, even if he wins the auction, contributing to low efficiency.
 
 
 
@@ -75,9 +75,9 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/eof_delay_profit.png" alt="eof_delay_profit" style="zoom:67%;" />
 
 
-**From this, we observe EOF access probability is more impactful than individual latency in MEV-Boost auctions. Even if you have a higher latency, with the same probability, if you can access high-value EOFs or you are just more lucky to get some exclusive EOFs, you can still outbid those players with lower latency (see the performance between player with 1-step latency and 2-step latency). But under the same latency, with a higher probability of accessing EOFs, the player seems to be dominant in the game.**
+**From this, we observe EOF access probability is more impactful than individual latency in MEV-Boost auctions. Even if you have a higher latency, with the same probability, if you can access high-value EOFs or you are just luckier to get some exclusive EOFs, you can still outbid those players with lower latency (see the performance between players with 1-step latency and 2-step latency). But under the same latency, with a higher probability of accessing EOFs, the player seems to be dominant in the game.**
 
-**Similarly, I believe the same kind of idea also applies to the situation in Julian's presentation about PBS auction. Suppose a builder can access more information and know that some MEV opportunities, e.g. CEX-DEX arbitrages, are going to be unprofitable near the end of the auction, under this situation, even if he has a higher latency and have to bid early, he may still bid more accurate than those players with a lower latency who has no information.**
+**Similarly, I believe the same kind of idea also applies to the situation in Julian's presentation about PBS auction. Suppose a builder can access more information and know that some MEV opportunities, e.g. CEX-DEX arbitrages, are going to be unprofitable near the end of the auction, under this situation, even if he has a higher latency and has to bid early, he may still bid more accurate than those players with a lower latency who has no information.**
 
 
 # Strategic Bidding
@@ -96,7 +96,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 
 
-**EOF Access Probablity:** Randomly drawn from uniform distribution (0.8, 1) for all players across all three profiles
+**EOF Access Probability:** Randomly drawn from uniform distribution (0.8, 1) for all players across all three profiles
 
 **Individual Delay:** For each strategy group that contains 4 players in a profile, set 1 player with 1 step delay (10ms), 1 player with 2 step delay (20ms), 1 player with 3 step delay (30ms) and 1player with 4 step delay (40ms). This setting is same for all the strategy groups across all 3 strategy profiles.
 
@@ -118,9 +118,9 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/winrate_last.png" alt="winrate_last" style="zoom:50%;" />
 
-1. Adaptive player struggle with win rate because of their reactive mechanism. They are already behind other naive-like players, and higher global delays make their reactions even slower.
+1. Adaptive player struggle with win rates because of their reactive mechanism. They are already behind other naive-like players, and higher global delays make their reactions even slower.
 2. Last-minute/Stealth players do have a clear edge because the revealing time $\epsilon = 0$ , which makes adaptive players not able to make a reaction on their revealing action. If they reveal earlier, we will see similar performance between last-minute/stealth and naive players (refer to the plot below).
-3. The increasing of win rate in last-minute/stealth/naive is because adaptive players are losing more. Their bidding decision is not affected by delay, as naive players always update bids aggressively and last-minute/stealth player revealing actions take delay into account.
+3. The increase of win rate in last-minute/stealth/naive is because adaptive players are losing more. Their bidding decision is not affected by delay, as naive players always update bids aggressively and last-minute/stealth player revealing actions take delay into account.
 
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig//winrate_last_eps03.png" alt="winrate_last_eps03" style="zoom:50%;" />
 
@@ -247,7 +247,7 @@ However, T is centered around 12 with a std. So whatever std value is, they have
 
 For last-minute/stealth, failing to reveal before termination means bidding too low and losing the auction, low win rate and low average profit. 
 
-For bluff, failing to cancel before termination means bidding too high and winning with negative profit, high winrate and negative average profit.
+For bluff, failing to cancel before termination means bidding too high and winning with negative profit, high win rate and negative average profit.
 
 #### Last-minute/Stealth
 
