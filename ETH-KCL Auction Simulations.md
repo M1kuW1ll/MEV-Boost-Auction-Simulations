@@ -75,7 +75,7 @@ Individual Delay: From 1 step to 10 steps, with 1 step increment
 <img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/eof_delay_profit.png" alt="eof_delay_profit" style="zoom:67%;" />
 
 
-
+**From this, we observe EOF access probability is more impactful than individual latency in MEV-Boost auctions. Even if you have a higher latency, with the same probability, if you can access high-value EOFs or you are just more lucky to get some exclusive EOFs, you can still outbid those players with lower latency (see the performance between player with 1-step latency and 2-step latency). But under the same latency, with a higher probability of accessing EOFs, the player seems to be dominant in the game.**
 
 
 # Strategic Bidding
