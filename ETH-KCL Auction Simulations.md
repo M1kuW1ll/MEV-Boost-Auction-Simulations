@@ -1,6 +1,6 @@
 # Agent-Based Modeling Simulation
 
-<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/acution_simulation.png" alt="acution_simulation" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/M1kuW1ll/MEV-Boost-Auction-Simulations/main/Fig/auction_simulation.png" alt="acution_simulation" style="zoom:50%;" />
 
 # Auction Design
 
